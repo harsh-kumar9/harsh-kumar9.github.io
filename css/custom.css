@@ -612,6 +612,11 @@ div.cover-text-placeholder{
 ==================================
 */
 
+/* Slightly larger default rendering (~10%) */
+body {
+	zoom: 1.1;
+}
+
 /* News list */
 ul.news {
 	list-style: none;
