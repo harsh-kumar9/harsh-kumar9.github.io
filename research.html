@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Research // Harsh Kumar</title>
+	<meta name="description" content="Research by Harsh Kumar — long-term effects of AI use on people, studied through large-scale randomized experiments.">
+	<meta name="author" content="Harsh Kumar">
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Favicon -->
+	<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+	<link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-C2STP5NL3D"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-C2STP5NL3D');
+	</script>
+</head>
+
+<body id="page-top" class="index">
+	<section id="portfolio">
+		<div class="container">
+
+			<div class="row margin-top-xl">
+				<div class="col-sm-7">
+					<h1><a class="page-header" href="index.html">Harsh Kumar</a></h1>
+					<h2 class="section-title">Research</h2>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-7">
+					<div class="projects">
+
+						<p class="margin-top-sm intro">
+							I study the long-term effects of AI use on people through large-scale randomized
+							experiments with real users, and use the findings to design better evaluations and
+							post-training methods. These outcomes have received little attention partly because
+							the experiments and longitudinal studies needed to measure them are difficult to
+							design and run. The signals we currently use to train and evaluate models are mostly
+							short-term preferences, which resemble surveys more than experiments, and sit far
+							from the ground truth we care about. I want to bring signals from that ground truth
+							into the models.
+						</p>
+
+						<h4 class="thread-title">Learning</h4>
+						<p class="intro" style="margin-top: 0px;">
+							Does help from an LLM build understanding that persists once the model is gone?
+							I have conducted randomized experiments in classrooms and online to study this: on
+							<a class="ref-link" href="https://arxiv.org/abs/2310.13712">guiding students in their use of LLMs</a> (CSCW 2024),
+							<a class="ref-link" href="https://arxiv.org/abs/2406.07571">supporting self-reflection at scale</a> (L@S 2024),
+							and <a class="ref-link" href="https://aka.ms/llms-for-math">math tutoring</a> with 1,800 learners (AIED 2025).
+							These experiments used designs that test participants after assistance is removed,
+							separating performance with AI from capability without it. I have also served on the
+							program committees of AIED (2025) and Learning@Scale (2025&ndash;26), and as an
+							expert reviewer for the Tools Competition.
+						</p>
+
+						<h4 class="thread-title">Creativity &amp; Cognition</h4>
+						<p class="intro" style="margin-top: 0px;">
+							LLMs can enhance human creativity when people co-create with them, but it is unclear
+							what happens to unassisted human creativity. In our
+							<a class="ref-link" href="https://arxiv.org/abs/2410.03703">CHI 2025 paper</a>, we
+							conducted randomized experiments with 1,100 participants and found that LLM
+							assistance boosted creative performance during use but hindered independent
+							performance afterward, with evidence of homogenization
+							(<a class="ref-link" href="https://github.com/harsh-kumar9/human-creativity-llm">code</a>).
+							In ongoing work, we study how LLMs with different personas affect mathematical
+							problem solving and open-ended writing
+							(<a class="ref-link" href="https://arxiv.org/abs/2604.02677">under review</a>;
+							<a class="ref-link" href="https://github.com/harsh-kumar9/social-learning-llm-agents">code</a>).
+							In a <a class="ref-link" href="https://dl.acm.org/doi/full/10.1145/3772318.3791796">CHI 2026 paper</a>
+							led by Jiayin Zhi, we investigated how the timing of LLM access affects critical
+							thinking under time constraints
+							(<a class="ref-link" href="https://criticalthinking-ai.app/">try the interface</a>).
+							Larger experiments are underway, including on the emotional effects of creating with
+							LLMs and on how AI involvement changes the way others receive a creative artifact.
+						</p>
+
+						<h4 class="thread-title">Wellbeing &amp; Mental Health</h4>
+						<p class="intro" style="margin-top: 0px;">
+							People increasingly bring personal struggles to LLMs. With Mental Health America, I
+							led the technical side of a
+							<a class="ref-link" href="https://arxiv.org/abs/2310.18326">text-messaging intervention</a>
+							that was deployed to over 10,000 people (AAAI 2024), part of the
+							<a class="ref-link" href="https://doi.org/10.1016/j.jad.2023.10.119">Small Steps</a> program
+							(Journal of Affective Disorders). In our
+							<a class="ref-link" href="https://dl.acm.org/doi/10.1145/3772318.3791233">CHI 2026 paper</a>,
+							we compared AI and human responses to real advice-seeking posts
+							(<a class="ref-link" href="https://github.com/harsh-kumar9/human-vs-ai-advice">code</a>). Our
+							<a class="ref-link" href="https://icml.cc/virtual/2026/poster/67178">ICML 2026 position paper</a>
+							argues that LLMs should be optimized for our wellbeing rather than short-horizon
+							preferences. I am currently running longitudinal studies and designing LLM agents
+							that support long-term flourishing rather than immediate satisfaction.
+						</p>
+
+						<h4 class="thread-title">Methodologies</h4>
+						<p class="intro" style="margin-top: 0px;">
+							My experiments run in both controlled and field settings: online platforms,
+							classrooms, and deployed interventions. For accepted papers, I release the code and
+							data (wherever allowed) on
+							<a class="ref-link" href="https://github.com/harsh-kumar9">GitHub</a> so that others
+							can build on these experiments. I am comfortable with the LLM post-training stack:
+							supervised fine-tuning and preference optimization (TRL, LoRA/QLoRA), inference with
+							vLLM, multi-GPU training, and LLM-as-judge evaluation pipelines.
+						</p>
+
+						<p class="margin-top-sm intro">
+							My long-term agenda is to build AI systems whose success is measured not only by
+							immediate task performance, but by how they shape human learning, creativity, and
+							wellbeing over time. I want to run longitudinal experiments over longer horizons,
+							and to scale the evaluations these experiments make possible. I also want to move
+							beyond the single user as the unit of analysis: the societal impacts of LLM use
+							play out in groups and communities, and these can be studied experimentally too.
+							On the technical side, I want to develop post-training methods tailored directly
+							to the domains I study, so that what we measure changes how models are trained.
+						</p>
+
+						<h4 class="thread-title">Working with others</h4>
+						<p class="intro" style="margin-top: 0px;">
+							The problems I work on are interdisciplinary. Besides HCI and ML researchers, I have
+							worked with psychologists, philosophers, economists, and poets. I have led teams, as
+							in the Mental Health America project, and worked within larger organizations, as an
+							Applied Scientist Intern at Microsoft. I regularly work with undergraduates, many of
+							whom are co-authors on my papers. If any of this is close to what you think about,
+							reach out. I am happy to chat, brainstorm, or collaborate.
+						</p>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-7 margin-top-lg margin-btm-lg">
+					<p class="intro"><a class="cv" href="index.html"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> back home</a>
+					&nbsp;&middot;&nbsp;
+					<a class="cv" href="papers.html">all papers <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-7">
+					<p class="template-credit">Website template adapted from <a href="https://github.com/abhsarma/abhsarma.github.io" target="_blank">Abhraneel Sarma</a>.</p>
+				</div>
+			</div>
+
+		</div>
+	</section>
+</body>
+</html>
