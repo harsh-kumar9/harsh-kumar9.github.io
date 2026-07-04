@@ -637,10 +637,15 @@ span.news-date {
 
 /* Research thread sub-headings */
 h4.thread-title {
-	font-family: 'AvenirNext-DemiBold', sans-serif;
+	font-family: 'AvenirNext-Bold', sans-serif;
 	color: #2a2a2a;
-	font-size: 17px;
-	margin: 24px 0px 4px 0px;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	display: inline-block;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #FD926F;
+	margin: 32px 0px 6px 0px;
 }
 
 /* Paper type tag (preprint, workshop, ...) */
