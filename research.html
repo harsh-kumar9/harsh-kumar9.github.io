@@ -47,13 +47,12 @@
 						<p class="margin-top-sm intro">
 							I study the long-term effects of AI use on people through large-scale randomized
 							experiments, and use the findings to design better evaluations and
-							post-training methods. These outcomes have received little attention partly because
+							post-training methods. These outcomes have received little attention, partly because
 							the experiments and longitudinal studies needed to measure them are difficult to
 							design and run. The signals we currently use to train and evaluate models are mostly
-							short-term preferences, which resemble surveys more than experiments, and say
-							little about outcomes like learning, creativity, and wellbeing. Experiments are
-							too slow to serve as a training signal, but they can serve as ground truth: they
-							tell us which fast, cheap metrics actually track human outcomes and which do not.
+							short-term preferences, which resemble surveys more than experiments. Experiments are
+							too slow to serve as a training signal, but they can serve as ground truth, by
+							helping us identify which fast, easy-to-collect metrics actually lead to better human outcomes and which do not.
 							I want to bring that validation layer into how models are evaluated and trained.
 						</p>
 
@@ -64,14 +63,13 @@
 							<a class="ref-link" href="https://arxiv.org/abs/2410.03703">CHI 2025 paper</a>, we
 							conducted randomized experiments with 1,100 participants and found that LLM
 							assistance boosted creative performance during use but hindered independent
-							performance afterward, with evidence of homogenization
-							(<a class="ref-link" href="https://github.com/harsh-kumar9/human-creativity-llm">code</a>).
-							In ongoing work, we study how LLMs with different personas affect mathematical
-							problem solving and open-ended writing
-							(<a class="ref-link" href="https://arxiv.org/abs/2604.02677">under review</a>;
-							<a class="ref-link" href="https://github.com/harsh-kumar9/social-learning-llm-agents">code</a>).
-							In a <a class="ref-link" href="https://dl.acm.org/doi/full/10.1145/3772318.3791796">CHI 2026 paper</a>
-							led by Jiayin Zhi, we investigated how the timing of LLM access affects critical
+							performance afterward, with evidence of homogenization, even after participants did not have LLM access
+							(we are seeing more evidence of this in real world now).
+							In ongoing work, we study how multiple LLMs with different personas (grounded in human social learning mechanisms) affect math
+							problem-solving and open-ended writing
+							(<a class="ref-link" href="https://arxiv.org/abs/2604.02677">under review</a>).
+							In another <a class="ref-link" href="https://dl.acm.org/doi/full/10.1145/3772318.3791796">CHI 2026 paper</a>
+							, we investigated how the timing of LLM access affects critical
 							thinking under time constraints.
 							Larger experiments are underway, including on the emotional effects of creating with
 							LLMs and on how AI involvement changes the way others receive a creative artifact.
@@ -79,15 +77,23 @@
 
 						<h4 class="thread-title">Learning</h4>
 						<p class="intro" style="margin-top: 0px;">
-							Does help from an LLM build understanding that persists once the model is gone?
-							I have conducted randomized experiments in classrooms and online to study this: on
-							<a class="ref-link" href="https://arxiv.org/abs/2310.13712">guiding students in their use of LLMs</a> (CSCW 2024),
-							<a class="ref-link" href="https://arxiv.org/abs/2406.07571">supporting self-reflection at scale</a> (L@S 2024),
-							and <a class="ref-link" href="https://aka.ms/llms-for-math">math tutoring</a> with 1,800 learners (AIED 2025).
-							These experiments used designs that test participants after assistance is removed,
-							separating performance with AI from capability without it. I also design
-							interventions that target outcomes beyond retention, such as learners&rsquo;
-							self-confidence and interest in the subject.
+							How can LLMs be useful for learning? Back in 2023, the promise was clear (explanations on demand).
+							But there was insufficient scientific evidence to confirm the learning benefits. So we ran
+							<a class="ref-link" href="https://aka.ms/llms-for-math">one of the first large RCTs</a> 
+							on LLMs and math education. LLMs helped, most when learners attempted problems before consulting
+							the model, and even when the explanations contained mistakes. This informed
+							the work I did in classrooms at the University of Toronto, on
+							<a class="ref-link" href="https://arxiv.org/abs/2310.13712">guiding students in their use of LLMs</a>
+							and <a class="ref-link" href="https://arxiv.org/abs/2406.07571">supporting self-reflection at scale</a>.
+							Increasingly, I think the focus on LLM tutors is inertia from older learning
+							technology. We have had machines that answer questions before (e.g., cognitive tutors). One direction
+							I have recently explored uses different LLM personas to
+							<a class="ref-link" href="https://arxiv.org/abs/2604.02677">simulate a classroom</a>. <!-- TODO: link + venue -->
+							Learners surrounded by simulated peers did better on math tests and wrote
+							less homogenized essays. Thinking beyond one learner, one tutor, one session
+							makes room for variables like motivation, self-efficacy, learners&rsquo;
+							relationships with the people around them, and long-horizon human outcomes. I am exploring more in this
+							direction.
 						</p>
 
 						<h4 class="thread-title">Wellbeing &amp; Mental Health</h4>
@@ -95,26 +101,25 @@
 							People increasingly bring personal struggles to LLMs. With Mental Health America, I
 							led the technical side of a
 							<a class="ref-link" href="https://arxiv.org/abs/2310.18326">text-messaging intervention</a>
-							that was deployed to over 10,000 people (IAAI 2024), part of the
+							that was deployed to over 10,000 people, part of the
 							<a class="ref-link" href="https://doi.org/10.1016/j.jad.2023.10.119">Small Steps</a> program
-							(Journal of Affective Disorders). In our
+							. In our
 							<a class="ref-link" href="https://dl.acm.org/doi/10.1145/3772318.3791233">CHI 2026 paper</a>,
 							we compared AI and human responses to real advice-seeking posts. Our
-							<a class="ref-link" href="https://icml.cc/virtual/2026/poster/67178">ICML 2026 position paper</a>
-							argues that LLMs should be optimized for our wellbeing rather than short-horizon
-							preferences. I am currently running longitudinal studies and designing LLM agents
-							that optimize for longer-term wellbeing outcomes rather than immediate user
-							satisfaction alone.
+							<a class="ref-link" href="hhttps://openreview.net/pdf?id=LCsPkh2Ins">position paper</a>
+							argues that LLMs should be optimized for our well-being rather than just short-horizon
+							preferences, account for collective interests alongside individual interests, and balance between user autonomy and guidance. I am currently running longitudinal studies and designing LLM agents
+							that optimizes for longer-term wellbeing outcomes.
 						</p>
 
 						<h4 class="thread-title">Methods</h4>
 						<p class="intro" style="margin-top: 0px;">
-							My experiments run in both controlled and field settings: online platforms,
-							classrooms, and deployed interventions. Depending on the nature of the problem,
-							I also use interviews, surveys, and qualitative analysis. For accepted papers, I release the code and
-							data (wherever allowed) on
+							My experiments run in both controlled and field settings, including online platforms,
+							classrooms, and deployed interventions. I develop the interfaces for conducting these experiments and collecting data,
+							and I release the code on
 							<a class="ref-link" href="https://github.com/harsh-kumar9">GitHub</a> so that others
-							can build on these experiments. I am comfortable with the LLM post-training stack:
+							can build on these experiments. Depending on the nature of the problem,
+							I also use interviews, surveys, and qualitative analysis. I am comfortable with the LLM post-training stack:
 							supervised fine-tuning and preference optimization (TRL, LoRA/QLoRA), inference with
 							vLLM, multi-GPU training, and LLM-as-judge evaluation pipelines.
 						</p>
@@ -124,7 +129,7 @@
 							success is measured not only by immediate task performance, but by how these systems
 							shape human learning, creativity, and wellbeing over time. I want to run longitudinal experiments over longer horizons,
 							and to scale the evaluations these experiments make possible. I also want to move
-							beyond the single user as the unit of analysis: many of the effects I care about
+							beyond the single user as the unit of analysis. Many of the effects I care about
 							play out in groups and communities, and these can be studied experimentally too.
 							On the technical side, I want to develop post-training methods tailored directly
 							to the domains I study, so that what we measure can change how models are trained.
@@ -132,14 +137,14 @@
 
 						<h4 class="thread-title">Working with others</h4>
 						<p class="intro" style="margin-top: 0px;">
-							The problems I work on are interdisciplinary. Besides HCI and ML researchers, I have
-							worked with psychologists, philosophers, economists, learning scientists, clinicians,
+							The problems I work on are interdisciplinary. Besides HCI and ML researchers, I regularly
+							work with psychologists, philosophers, economists, learning scientists, clinicians,
 							tutors, and artists. I have led teams, as
 							in the Mental Health America project, and worked within larger organizations, as an
 							Applied Scientist Intern at Microsoft. I regularly work with undergraduates, many of
-							whom are co-authors on my papers. I have also served on the program committees of
-							AIED (2025) and Learning@Scale (2025&ndash;26), and as an expert reviewer for the
-							Tools Competition. If you work on similar questions, I&rsquo;d be happy to talk.
+							whom are co-authors on my papers. I have also served on the program committees of conferences such as
+							AIED (2025) and Learning@Scale (2025&ndash;26), and as an expert reviewer for grant competitions, such as the
+							Tools Competition. If you work on similar questions or if any of my work interests you, I&rsquo;d be happy to talk.
 						</p>
 
 					</div>
