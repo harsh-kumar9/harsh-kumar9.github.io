@@ -66,13 +66,11 @@
 							Did advice lead to better action, or only feel reassuring in the moment? 
 							I use randomized and longitudinal experiments to measure these downstream outcomes, 
 							then use the results to design better assistance, evaluations, and post-training objectives.
-							The preferences used to train and evaluate models are proximal signals. 
-							Human experiments can test when those signals predict the downstream outcomes we care about 
-							and help us develop better scalable proxies.
-							<!-- Experiments are
-							too slow to serve as a training signal, but they can serve as ground truth, by
+							The same experiments then test whether those interventions work.
+							The preferences used to train and evaluate models are proxy signals. 
+							Experiments are too slow to serve as a training signal, but they can serve as ground truth, by
 							helping us identify which fast, easy-to-collect metrics actually lead to better human outcomes and which do not.
-							I want to bring that validation layer into how models are evaluated and trained. -->
+							I want to bring that validation layer into how models are evaluated and trained.
 						</p>
 
 						<h4 class="thread-title">Creativity &amp; Cognition</h4>
@@ -128,8 +126,10 @@
 							we compared AI and human responses to real advice-seeking posts. Our
 							<a class="ref-link" href="https://openreview.net/pdf?id=LCsPkh2Ins" target="_blank" rel="noopener">position paper</a>
 							argues that LLMs should be optimized for our well-being rather than just short-horizon
-							preferences, account for collective interests alongside individual interests, and balance between user autonomy and guidance. I am currently running longitudinal studies and designing LLM agents
-							that optimizes for longer-term wellbeing outcomes.
+							preferences, account for collective interests alongside individual interests, and balance between user autonomy and guidance.
+							In recent work, we found that frontier LLMs collapse over 90% of advice contexts into a single supportive default; we repaired this with fine-tuning and validated the repair in a 200-participant human evaluation (<a class="ref-link" href="https://arxiv.org/abs/2607.08326" target="_blank" rel="noopener">working draft</a>).
+							I am currently running longitudinal studies and designing LLM agents
+							that optimize for longer-term wellbeing outcomes.
 						</p>
 
 						<h4 class="thread-title">Methods</h4>
@@ -139,7 +139,7 @@
 							and I release the code on
 							<a class="ref-link" href="https://github.com/harsh-kumar9" target="_blank" rel="noopener">GitHub</a> so that others
 							can build on these experiments. Depending on the nature of the problem,
-							I also use interviews, surveys, and qualitative analysis. I am comfortable with the LLM post-training stack:
+							I also use interviews, surveys, and qualitative analysis. I am hands-on with the LLM post-training stack:
 							supervised fine-tuning and preference optimization (TRL, LoRA/QLoRA), inference with
 							vLLM, multi-GPU training, and LLM-as-judge evaluation pipelines.
 						</p>
@@ -151,7 +151,7 @@
 							and to scale the evaluations these experiments make possible. I also want to move
 							beyond the single user as the unit of analysis. Many of the effects I care about
 							play out in groups and communities, and these can be studied experimentally too.
-							On the technical side, I want to develop post-training methods tailored directly
+							On the technical side, I have begun developing post-training methods tailored directly
 							to the domains I study, so that what we measure can change how models are trained.
 						</p>
 
