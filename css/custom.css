@@ -677,3 +677,22 @@ p.template-credit a {
 	color: #777;
 	text-decoration: underline;
 }
+
+/* Current-focus callout on index */
+div.focus-box {
+	border: 1.5px solid #FD926F;
+	border-radius: 6px;
+	padding: 4px 22px;
+	margin: 8px 0px 24px 0px;
+}
+
+div.focus-box p.intro {
+	margin: 14px 0px;
+	color: #3f4250;
+}
+
+@media (max-width: 767px) {
+	div.focus-box {
+		padding: 2px 16px;
+	}
+}
